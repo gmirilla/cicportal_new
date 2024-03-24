@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
@@ -28,7 +28,7 @@
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
-        <!-- Confirm Password test  -->
+        <!-- Confirm Password -->
         <div class="mt-4">
             <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
 
@@ -49,4 +49,4 @@
             </x-primary-button>
         </div>
     </form>
-</x-app-layout>
+</x-guest-layout>
